@@ -1,12 +1,21 @@
+<?php
+// Set default values if not set
+$title = isset($title) ? htmlspecialchars($title, ENT_QUOTES, 'UTF-8') : 'Organic Health';
+$description = isset($description) ? htmlspecialchars($description, ENT_QUOTES, 'UTF-8') : '';
+$keywords = isset($keywords) ? htmlspecialchars($keywords, ENT_QUOTES, 'UTF-8') : '';
+$robots = isset($robots) ? htmlspecialchars($robots, ENT_QUOTES, 'UTF-8') : 'index, follow';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Organic Health</title>
+    <title><?= $title; ?></title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta name="description" content="<?= $description; ?>">
+    <meta name="keywords" content="<?= $keywords; ?>">
+    <meta name="robots" content="<?= $robots; ?>">
+
 
     <!-- Favicon -->
     <link href="<?= asset("img/favicon.ico") ?>" rel="icon">
