@@ -1,4 +1,11 @@
-<?php include 'includes/header.php';
+<?php
+// Page SEO
+$title = 'Get Distributorship - Organic Health';
+$description = 'Learn more about our company, our mission, and our values.';
+$keywords = 'about, company, mission, values';
+$robots = 'index, follow';
+
+include './includes/header.php';
 include 'api/send_dist_email.php';
 ?>
 

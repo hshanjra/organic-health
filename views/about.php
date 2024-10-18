@@ -1,4 +1,13 @@
-<?php include './includes/header.php'; ?>
+<?php
+//  Add page SEO
+
+$title = 'About Us - Organic Health';
+$description = 'Learn more about our company, our mission, and our values.';
+$keywords = 'about, company, mission, values';
+$robots = 'index, follow';
+
+include './includes/header.php';
+?>
 
 <!-- Page Header Start -->
 <div class="container-fluid about-banner mb-5 wow fadeIn" data-wow-delay="0.1s">

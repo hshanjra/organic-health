@@ -1,4 +1,12 @@
-<?php include 'includes/header.php'; ?>
+<?php
+//  Add page SEO
+$title = 'Clients - Organic Health';
+$description = 'Learn more about our company, our mission, and our values.';
+$keywords = 'about, company, mission, values';
+$robots = 'index, follow';
+
+include './includes/header.php';
+?>
 
 
 

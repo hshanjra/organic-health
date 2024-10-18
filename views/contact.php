@@ -1,4 +1,11 @@
-<?php include 'includes/header.php';
+<?php
+//  Add page SEO
+$title = 'Contact Us - Organic Health';
+$description = 'Learn more about our company, our mission, and our values.';
+$keywords = 'about, company, mission, values';
+$robots = 'index, follow';
+
+include './includes/header.php';
 include 'api/send_contact_email.php';
 ?>
 <!-- Page Header Start -->
