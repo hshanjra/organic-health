@@ -64,7 +64,7 @@ include 'api/send_contact_email.php';
                 <div class="bg-light rounded p-5">
                     <p class="d-inline-block border rounded-pill py-1 px-4">Contact Us</p>
                     <h1 class="mb-4">Have Any Query? Please Contact Us!</h1>
-                    <form method="post" action="/contact">
+                    <form method="post" action="/contact#form" id="form">
                         <?php if (!empty($errorMessage)): ?>
                             <div style="color: red;" class="mb-3"><?= $errorMessage; ?></div>
                         <?php endif; ?>
