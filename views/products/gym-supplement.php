@@ -10,7 +10,7 @@ $ogTitle = $title;
 $ogDescription = $description;;
 $ogImage = asset('img/gym-supplement/banner/GYM-SUPPLEMENT-BANNER.jpg');
 
-include 'includes/product-header.php';
+include 'includes/header.php';
 ?>
 
 <!-- Page Header Start -->

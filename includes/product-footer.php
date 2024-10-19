@@ -75,7 +75,7 @@
      </div>
    </div>
  </div>
- <!--Gallery Product Image Slider Modle End-->
+ <!--Gallery Product Image Slider Model End-->
 
 
 

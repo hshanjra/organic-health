@@ -1,4 +1,4 @@
-<?php include 'includes/product-header.php'; ?>
+<?php include 'includes/header.php'; ?>
 
 
 <!-- Page Header Start -->
@@ -131,4 +131,4 @@
 <!--Gallery Section End-->
 
 
-<?php include 'includes/product-footer.php'; ?>
+<?php include 'includes/footer.php'; ?>

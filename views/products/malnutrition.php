@@ -122,4 +122,4 @@
 <!--Gallery Section End-->
 
 
-<?php include 'includes/product-footer.php'; ?>
+<?php include 'includes/footer.php'; ?>

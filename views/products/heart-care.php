@@ -1,4 +1,17 @@
-<?php include 'includes/product-header.php'; ?>
+<?php
+// SEO
+$title = 'Heart Care';
+$description = 'Heart care ';
+$keywords = 'heart care,';
+$robots = 'index, follow';
+
+// Open Graph
+$ogTitle = $title;
+$ogDescription = $description;;
+$ogImage = asset("img/heart-care/banner/HEART-CARE-02.jpg");
+
+include 'includes/header.php';
+?>
 
 
 <!-- Page Header Start -->
@@ -100,4 +113,4 @@
 <!--Gallery Section End-->
 
 
-<?php include 'includes/product-footer.php'; ?>
+<?php include 'includes/footer.php'; ?>

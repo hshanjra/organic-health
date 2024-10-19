@@ -10,7 +10,7 @@ $ogTitle = 'Effervescent Tablets - Fast Dissolving Tablets for Quick Relief';
 $ogDescription = 'Discover the benefits of effervescent tablets, offering quick dissolution and rapid absorption for fast relief. Perfect for vitamins, pain relief, and electrolyte replenishment.';
 $ogImage = asset("img/effervescent-tablets/banner/webbenner.jpg");
 
-include 'includes/product-header.php';
+include 'includes/header.php';
 ?>
 
 
@@ -251,4 +251,4 @@ include 'includes/product-header.php';
 <!--Gallery Section End-->
 
 
-<?php include 'includes/product-footer.php'; ?>
+<?php include 'includes/footer.php'; ?>
