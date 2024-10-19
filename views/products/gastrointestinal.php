@@ -29,7 +29,7 @@
       <div class=" wow fadeIn" data-wow-delay="0.1s">
         <div class="container-xxl">
           <div class="row gy-4 mb-4">
-            <img src="img/gastrointestinal/banner/GASTO.jpg" alt="" />
+            <img src="<?= asset("img/gastrointestinal/banner/GASTO.jpg") ?>" alt="" />
           </div>
         </div>
       </div>

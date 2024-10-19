@@ -29,7 +29,7 @@
       <div class=" wow fadeIn" data-wow-delay="0.1s">
         <div class="container-xxl">
           <div class="row gy-4 mb-4">
-            <img src="img/joint-care/banner/WEB-IMAGE-TITLE.jpg" alt="" />
+            <img src="<?= asset("img/joint-care/banner/WEB-IMAGE-TITLE.jpg") ?>" alt="" />
           </div>
         </div>
       </div>
