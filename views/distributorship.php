@@ -34,11 +34,11 @@ include 'api/send_dist_email.php';
             <h1>Have Any Query about Distributorship?</h1>
         </div>
 
-        <div class="row g-4">
+        <div class="row g-4" id="form">
             <div class=" wow fadeIn" data-wow-delay="0.1s">
                 <div class="bg-light rounded p-5">
                     <h1 class="mb-4">Please Contact Us!</h1>
-                    <form method="post" action="/distributorship#form" id="form">
+                    <form method="post" action="/distributorship#form">
                         <?php if (!empty($errorMessage)): ?>
                             <div style="color: red;" class="mb-3"><?= $errorMessage; ?></div>
                         <?php endif; ?>

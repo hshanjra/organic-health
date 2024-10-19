@@ -60,11 +60,11 @@ include 'api/send_contact_email.php';
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" id="form">
                 <div class="bg-light rounded p-5">
                     <p class="d-inline-block border rounded-pill py-1 px-4">Contact Us</p>
                     <h1 class="mb-4">Have Any Query? Please Contact Us!</h1>
-                    <form method="post" action="/contact#form" id="form">
+                    <form method="post" action="/contact#form">
                         <?php if (!empty($errorMessage)): ?>
                             <div style="color: red;" class="mb-3"><?= $errorMessage; ?></div>
                         <?php endif; ?>
