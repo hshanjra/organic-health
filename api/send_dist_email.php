@@ -21,16 +21,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Form validation
     if (empty($name)) {
         $errorMessage = "Please enter your name.";
+    } elseif (strlen($name) > 50) {
+        $errorMessage = "Name is too long. Please enter a name less than 50 characters.";
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $errorMessage = "Please enter a valid email address.";
     } elseif (empty($contact_number) || !is_numeric($contact_number) || strlen($contact_number) != 10) {
         $errorMessage = "Please enter a valid contact number.";
     } elseif (empty($address)) {
         $errorMessage = "Please enter your address.";
+    } else if (strlen($address) > 100) {
+        $errorMessage = "Address is too long. Please enter a address less than 100 characters.";
     } elseif (empty($subject)) {
         $errorMessage = "Please enter a subject.";
+    } elseif (strlen($subject) > 50) {
+        $errorMessage = "Subject is too long. Please enter a subject less than 50 characters.";
     } elseif (empty($message)) {
         $errorMessage = "Please enter your message.";
+    } else if (strlen($message) > 450) {
+        $errorMessage = "Message is too long. Please enter a message less than 450 characters.";
     } else {
         // If validation passes, send the email using PHPMailer
         $mail = new PHPMailer(true);
