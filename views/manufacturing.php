@@ -1,4 +1,11 @@
-<?php include 'includes/header.php'; ?>
+<?php
+$title = "Manufacturing | Capacity | Packaging";
+$description = "";
+$keywords = "";
+$robots = "index, follow";
+
+include 'includes/header.php';
+?>
 
 
 <!-- Page Header Start -->

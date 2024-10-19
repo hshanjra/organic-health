@@ -1,4 +1,17 @@
-<?php include 'includes/product-header.php'; ?>
+<?php
+// SEO
+$title = 'Gym Supplements | Protein Powder';
+$description = 'Gym Supplement';
+$keywords = 'Gym Supplement, whey protein';
+$robots = 'index, follow';
+
+// Open Graph
+$ogTitle = $title;
+$ogDescription = $description;;
+$ogImage = asset('img/gym-supplement/banner/GYM-SUPPLEMENT-BANNER.jpg');
+
+include 'includes/product-header.php';
+?>
 
 <!-- Page Header Start -->
 <div class="container-fluid gymsupplement-header mb-5 wow fadeIn" data-wow-delay="0.1s">

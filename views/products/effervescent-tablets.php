@@ -1,4 +1,18 @@
-<?php include 'includes/product-header.php'; ?>
+<?php
+// SEO
+$title = 'Effervescent Tablets - Fast Dissolving Tablets for Quick Relief';
+$description = 'Discover the benefits of effervescent tablets, offering quick dissolution and rapid absorption for fast relief. Perfect for vitamins, pain relief, and electrolyte replenishment.';
+$keywords = 'effervescent tablets, fast dissolving tablets, quick relief, vitamin tablets, pain relief, electrolyte tablets, water-soluble tablets, dissolve in water, rapid absorption';
+$robots = 'index, follow';
+
+// Open Graph
+$ogTitle = 'Effervescent Tablets - Fast Dissolving Tablets for Quick Relief';
+$ogDescription = 'Discover the benefits of effervescent tablets, offering quick dissolution and rapid absorption for fast relief. Perfect for vitamins, pain relief, and electrolyte replenishment.';
+$ogImage = asset("img/effervescent-tablets/banner/webbenner.jpg");
+
+include 'includes/product-header.php';
+?>
+
 
 
 <!-- Page Header Start -->
@@ -29,7 +43,7 @@
       <div class=" wow fadeIn" data-wow-delay="0.1s">
         <div class="container-xxl">
           <div class="row gy-4 mb-4">
-            <img src="img/effervescent-tablets/banner/webbenner.jpg" alt="" />
+            <img src="<?= asset("img/effervescent-tablets/banner/webbenner.jpg") ?>" alt="" />
           </div>
         </div>
       </div>

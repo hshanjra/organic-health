@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(0);
+
 // Load Composer's auto loader
 require_once(__DIR__ .  '/vendor/autoload.php');
 

@@ -1,6 +1,6 @@
 <?php
 //  Add page SEO
-$title = 'Clients - Organic Health';
+$title = 'Our Clients';
 $description = 'Learn more about our company, our mission, and our values.';
 $keywords = 'about, company, mission, values';
 $robots = 'index, follow';

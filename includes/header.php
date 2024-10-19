@@ -1,20 +1,70 @@
 <?php
 // Set default values if not set
-$title = isset($title) ? htmlspecialchars($title, ENT_QUOTES, 'UTF-8') : 'Organic Health';
-$description = isset($description) ? htmlspecialchars($description, ENT_QUOTES, 'UTF-8') : '';
-$keywords = isset($keywords) ? htmlspecialchars($keywords, ENT_QUOTES, 'UTF-8') : '';
+$title = isset($title) ? htmlspecialchars($title, ENT_QUOTES, 'UTF-8') : 'Organic Health - Your Source for Natural Wellness';
+$description = isset($description) ? htmlspecialchars($description, ENT_QUOTES, 'UTF-8') : 'Discover a range of organic health products and resources to support your natural wellness journey.';
+$keywords = isset($keywords) ? htmlspecialchars($keywords, ENT_QUOTES, 'UTF-8') : 'organic health, natural wellness, organic products';
 $robots = isset($robots) ? htmlspecialchars($robots, ENT_QUOTES, 'UTF-8') : 'index, follow';
+$brand = isset($brand) ? htmlspecialchars($brand, ENT_QUOTES, 'UTF-8') : 'Organic Health';
+
+// Open Graph
+$ogTitle = isset($ogTitle) ? htmlspecialchars($ogTitle, ENT_QUOTES, 'UTF-8') : $title;
+$ogDescription = isset($ogDescription) ? htmlspecialchars($ogDescription, ENT_QUOTES, 'UTF-8') : $description;
+$ogImage = isset($ogImage) ? htmlspecialchars($ogImage, ENT_QUOTES, 'UTF-8') : '';
+$ogUrl = isset($ogUrl) ? htmlspecialchars($ogUrl, ENT_QUOTES, 'UTF-8') : '';
+
+// Twitter
+$twitterCard = isset($twitterCard) ? htmlspecialchars($twitterCard, ENT_QUOTES, 'UTF-8') : 'summary';
+$twitterTitle = isset($twitterTitle) ? htmlspecialchars($twitterTitle, ENT_QUOTES, 'UTF-8') : $title;
+$twitterDescription = isset($twitterDescription) ? htmlspecialchars($twitterDescription, ENT_QUOTES, 'UTF-8') : $description;
+$twitterImage = isset($twitterImage) ? htmlspecialchars($twitterImage, ENT_QUOTES, 'UTF-8') : '';
+
+// Google Schema
+$type = isset($type) ? htmlspecialchars($type, ENT_QUOTES, 'UTF-8') : '';
+$schemaName = isset($schemaName) ? htmlspecialchars($schemaName, ENT_QUOTES, 'UTF-8') : '';
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title><?= $title; ?></title>
+    <title><?= $title . ' | ' . $brand; ?></title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="description" content="<?= $description; ?>">
     <meta name="keywords" content="<?= $keywords; ?>">
     <meta name="robots" content="<?= $robots; ?>">
+
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="<?= $ogTitle; ?>">
+    <meta property="og:description" content="<?= $ogDescription; ?>">
+    <meta property="og:image" content="<?= $ogImage; ?>">
+    <meta property="og:url" content="<?= $ogUrl; ?>">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="<?= $twitterCard; ?>">
+    <meta name="twitter:title" content="<?= $twitterTitle; ?>">
+    <meta name="twitter:description" content="<?= $twitterDescription; ?>">
+    <meta name="twitter:image" content="<?= $twitterImage; ?>">
+
+    <!-- Schema -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "<?= $type; ?>",
+            "name": "<?= $schemaName; ?>",
+            "image": "<?= $ogImage; ?>",
+            "description": "<?= $description; ?>",
+            "brand": {
+                "@type": "Brand",
+                "name": "<?= $brand; ?>"
+            },
+        }
+    </script>
+
+
+
 
     <!-- Favicon -->
     <!-- <link href="img/favicon.ico" rel="icon"> -->
@@ -100,7 +150,7 @@ $robots = isset($robots) ? htmlspecialchars($robots, ENT_QUOTES, 'UTF-8') : 'ind
                     <a href="/" class="active">Home</a>
                 </li>
                 <li class="menu-item">
-                    <a href="about">About</a>
+                    <a href="/about">About</a>
                 </li>
 
                 <li class="menu-item">

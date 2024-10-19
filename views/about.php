@@ -1,10 +1,16 @@
 <?php
 //  Add page SEO
 
-$title = 'About Us - Organic Health';
-$description = 'Learn more about our company, our mission, and our values.';
+$title = 'About Organic Health - Committed to Sustainable Living';
+$description = 'Learn about Organic Health`s dedication to promoting sustainable and healthy living through our range of organic products.';
 $keywords = 'about, company, mission, values';
 $robots = 'index, follow';
+
+// Open Graph
+$type = 'website';
+$ogTitle = $title;
+$ogDescription = $description;;
+$ogImage = asset('img/about/banner/ABOUT-BANNER.jpg');
 
 include './includes/header.php';
 ?>

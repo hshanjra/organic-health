@@ -1,6 +1,6 @@
 <?php
 // Page SEO
-$title = 'Get Distributorship - Organic Health';
+$title = 'Get Distributorship';
 $description = 'Learn more about our company, our mission, and our values.';
 $keywords = 'about, company, mission, values';
 $robots = 'index, follow';

@@ -1,7 +1,7 @@
 <?php
 //  Add page SEO
-$title = 'Contact Us - Organic Health';
-$description = 'Learn more about our company, our mission, and our values.';
+$title = 'Contact Organic Health - Get in Touch';
+$description = 'Contact Organic Health for inquiries about our products or services.';
 $keywords = 'about, company, mission, values';
 $robots = 'index, follow';
 
